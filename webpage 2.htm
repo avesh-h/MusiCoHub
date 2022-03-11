@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusiCoHub</title>
+
+    <link rel="icon" href="images\sound-waves.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=DM+Sans&display=swap" rel="stylesheet">
+ 
+               <!--BOOTSTRAP CSS FILES-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="material-scrolltop.css">
+
+
+              <!--BOOTSRAP JS FILES-->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+               <!--JQUERY AND JQUERY PLUGIN FILES-->
+<script src="jquery-3.6.0.js"></script>
+<script src="material-scrolltop.js"></script>
+
+
+
+
+<style>
+
+                                           /*Navbar*/
+.logo{
+    filter: invert(100%);
+}
+.btn2{
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(38, 38, 44);
+    font-size: 15px;
+    
+}
+.endbtn{
+   /* border: 1px solid red;*/
+    display: flex;
+   position: relative;
+   /*left: 22%;*/
+   justify-content: flex-end;
+
+}
+.btn2:hover{
+
+    background-color: white;
+    color: black;
+    
+}
+
+
+
+                                                     /*Carousel*/
+
+
+.carousel{
+    z-index: 1;
+    opacity: 0.5;
+    width: 100%;
+    
+    
+  
+    
+}
+.carou{
+    z-index: -1;
+    background-color: rgb(68, 68, 68);
+    font-family: 'Baloo Bhai 2', cursive;
+    
+   
+    
+}
+
+
+
+
+
+
+                                                       /*Second*/                 
+
+.second{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+  
+    
+
+}
+.card{
+    border: 1px solid white;
+    background-color: black;
+   
+}
+
+
+
+                                                         /*Third*/
+.third{
+
+/*border: 1px solid rebeccapurple;*/
+height: 300px;
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+
+
+}   
+.three{
+
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}   
+
+.btnp{
+  border: 2px double white;
+  background-color: black;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  border-radius: 40px;
+  
+  
+  
+}
+#ready{
+  font-size: 40px;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+                                          <!--NavBar-->
+                                         
+    
+
+
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav">
+        <div class="container">
+          <img src="images/sound-waves.png" alt="" height="50" width="60"class="logo img-fluid mx-3">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active mx-4" aria-current="page" href="#" id="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4" href="#ready">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4" href="#ready">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mx-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Premium
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#ready">Plans</a></li>
+                  <li><a class="dropdown-item" href="#">Devices</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <br>
+
+
+            <div class="endbtn">
+                <button class="btn2 mx-3 " id="sign">Sign In</button>
+                <button class="btn2" id="reg">
+                   Register</button>
+                </div>
+    
+
+          </div>
+        </div>
+      </nav>
+
+    
+
+                                             <!--Carousal-->
+
+
+<div class="carou">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/random/1920x700/?laptop-music" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="bg-success head">First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/random/1920x700/?music-headphones" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="bg-primary head">Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/random/1920x700/?music-playing" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="bg-danger head">Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+    </div>
+
+
+                                      <!--Second-->
+
+
+
+      <div class="container-fluid">
+          <div class="row second p-4">
+           <h2 class="m-4"><center>Features</center></h2>
+
+        <div class="card p-3 m-2" style="width: 18rem;">
+            <img src="images/jerin-john-Smbz6GQt_CI-unsplash.jpg" class="rounded float-start" alt="..." height="190" width="250">
+            <div class="card-body">
+                <h5 class="card-title">Awesome Soundsystem</h5><hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+
+          <div class="card p-3 m-2" style="width: 18rem;">
+            <img src="images/mildly-useful-N_xjrdKZPkw-unsplash.jpg" class="rounded float-start" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Offline Download</h5><hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+
+          <div class="card p-3 m-2" style="width: 18rem;">
+            <img src="images/giorgio-trovato-hnbd2Dmrqi0-unsplash.jpg" class="rounded float-start" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Play in any Device</h5><hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+          <div class="card p-3 m-2" style="width: 18rem;">
+            <img src="images/alexander-popov-9vDdkxSCAD4-unsplash.jpg" class="rounded float-start" alt="..." height="180">
+            <div class="card-body">
+                <h5 class="card-title">Play Everywhere</h5><hr>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+
+
+       </div>
+
+      </div>
+
+
+
+                                                  <!--Third-->
+
+
+      <div class="container-fluid">
+        <div class="row third">
+          <div class="col-lg-12 three">
+            <h2 id="ready">Ready ! To Take step into music world?</h2>
+
+            <p class="know">
+              <br><br>Get to know about our plans:
+          </p>
+          
+          <button type="button" class="btn btn-lg btn-dark btnp">
+              Get Premium
+           </button>
+          </div>
+        </div>
+      </div>
+
+
+<!-- material-scrolltop button -->
+<button class="material-scrolltop" type="button"></button>
+
+<!-- Initialize material-scrolltop (minimal) -->
+<script>
+  $('body').materialScrollTop({
+    duration: 100, // 
+  easing: 'linear'
+  });
+</script>
+
+
+
+
+<!--My jquery-->
+<script>
+  $(document).ready(function(){
+
+                                              /*Navbar dark*/
+
+    $(window).scroll(function(){
+   
+
+   $('.navbar').css("background","#0000004d")
+
+   setTimeout(function(){
+    $('.navbar').css("background","transparent")
+
+   },5000)
+    
+    
+    })
+
+                                            /*Navbar Invisible*/
+    $('.material-scrolltop').click(function(){
+
+      setTimeout(function(){
+        $('.navbar').css("background","transparent")
+
+      },2000)
+
+    })
+
+    $('#home').click(function(){
+
+setTimeout(function(){
+  $('.navbar').css("background","transparent")
+
+},2000)
+
+})
+
+
+                                       /*Hover*/
+
+$('.navbar').mouseenter(function(){
+  $('.navbar').css("background","#0000004d")
+
+})
+$('.navbar').mouseleave(function(){
+  $('.navbar').css("background","transparent")
+
+})
+
+
+$('.navbar-toggler').click(function(){
+  $('#navbarSupportedContent').toggle()
+  
+
+})
+
+  })
+
+</script>
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
